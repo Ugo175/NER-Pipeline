@@ -3,7 +3,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project builds a scalable pipeline to extract structured product aspects from **2,000,000+ noisy e-commerce listing titles** (German automotive marketplace data).
 
@@ -20,7 +20,7 @@ The challenge combines **large-scale data processing, strict formatting constrai
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -65,44 +65,44 @@ python main.py --mode evaluate --model models/best_model --data data/raw/validat
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 NER-Pipeline/
-├── src/                          # Source code
-│   ├── data_processing/          # Data ingestion and preprocessing
-│   │   ├── ingestion.py          # Compressed file handling
-│   │   ├── preprocessor.py       # NER preprocessing
-│   │   └── validator.py          # Data validation
-│   ├── models/                   # NER models
-│   │   ├── base_ner_model.py     # Abstract base class
-│   │   ├── bert_ner.py          # BERT-based NER
-│   │   └── trainer.py            # Model training utilities
-│   ├── evaluation/               # Evaluation framework
-│   │   ├── metrics.py           # Metric calculations
-│   │   ├── evaluator.py         # Model evaluation
-│   │   └── analyzer.py           # Results analysis
-│   └── utils/                    # Utilities
-│       ├── entity_reconstructor.py # Entity reconstruction
-│       ├── submission_formatter.py # Submission formatting
-│       └── config.py             # Configuration management
-├── data/                         # Data directories
-│   ├── raw/                      # Raw input data
-│   ├── processed/                # Processed data
-│   └── output/                   # Output files
-├── models/                       # Trained models
-├── notebooks/                    # Jupyter notebooks
-├── logs/                         # Log files
-├── submissions/                  # Submission files
-├── tests/                        # Unit tests
-├── main.py                       # Main entry point
-├── requirements.txt              # Dependencies
-└── README.md                     # This file
+├── src/                          
+│   ├── data_processing/          
+│   │   ├── ingestion.py         
+│   │   ├── preprocessor.py       
+│   │   └── validator.py          
+│   ├── models/                   
+│   │   ├── base_ner_model.py     
+│   │   ├── bert_ner.py          
+│   │   └── trainer.py            
+│   ├── evaluation/               
+│   │   ├── metrics.py           
+│   │   ├── evaluator.py        
+│   │   └── analyzer.py           
+│   └── utils/                    
+│       ├── entity_reconstructor.py 
+│       ├── submission_formatter.py 
+│       └── config.py             
+├── data/                         
+│   ├── raw/                      
+│   ├── processed/                
+│   └── output/                   
+├── models/                       
+├── notebooks/                    
+├── logs/                         
+├── submissions/                  
+├── tests/                        
+├── main.py                      
+├── requirements.txt              
+└── README.md                    
 ```
 
 ---
 
-## 🔧 Key Features
+## Key Features
 
 ### Data Processing
 - **Streaming ingestion** of gzip-compressed TAB-separated files
@@ -137,7 +137,7 @@ NER-Pipeline/
 
 ---
 
-## 📊 Entity Types
+## Entity Types
 
 The pipeline extracts the following entity types from German automotive listings:
 
@@ -157,7 +157,7 @@ The pipeline extracts the following entity types from German automotive listings
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Data Flow
 1. **Ingestion**: Stream compressed files → DataFrame chunks
@@ -169,20 +169,20 @@ The pipeline extracts the following entity types from German automotive listings
 
 ### Key Challenges Addressed
 
-#### 1️⃣ Real-World Noisy Data
+#### 1 Real-World Noisy Data
 - Misspellings and abbreviations (e.g., "WaPu" for "Wasserpumpe")
 - Inconsistent tokenization (`Zahnriemensatz+WaPu`)
 - Mixed-language terms and duplicate tokens
 - Human annotation inconsistencies
 
-#### 2️⃣ Strict Entity Reconstruction Rules
+#### 2 Strict Entity Reconstruction Rules
 - Empty tags indicate continuation
 - Same tag ≠ continuation
 - Multi-token entities must use ASCII space
 - Duplicate tokens must be preserved
 - Submission formatting must follow exact constraints
 
-#### 3️⃣ Scale Requirements
+#### 3 Scale Requirements
 - 2,000,000+ records processing
 - Gzip compression handling
 - Memory-efficient streaming
@@ -190,7 +190,7 @@ The pipeline extracts the following entity types from German automotive listings
 
 ---
 
-## 🧪 Development
+## Development
 
 ### Running Tests
 ```bash
@@ -223,7 +223,7 @@ config.save_to_file(Path("config.json"))
 
 ---
 
-## 📈 Performance
+## Performance
 
 ### Metrics (To Be Updated)
 - **Token-level F1**: TBD
@@ -238,7 +238,7 @@ config.save_to_file(Path("config.json"))
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - **Transformer-based contextual embeddings** (GPT, RoBERTa)
 - **Active learning** for ambiguous tags
@@ -250,7 +250,7 @@ config.save_to_file(Path("config.json"))
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
@@ -260,13 +260,13 @@ config.save_to_file(Path("config.json"))
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Hugging Face Transformers** for pre-trained models
 - **seqeval** for entity-level evaluation metrics
@@ -275,7 +275,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-## 📞 Support
+## Support
 
 For questions and support:
 - Create an issue in the repository
