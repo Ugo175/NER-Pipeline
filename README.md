@@ -1,4 +1,4 @@
-# E-Commerce Title Aspect Extraction Pipeline..(To be updated)  
+# E-Commerce Title Aspect Extraction Pipeline
 **Scalable NLP + Data Engineering Project (2M+ Listings)**
 
 ---
